@@ -14,6 +14,9 @@
         android:theme="@style/Theme.ViewControlDemo"
         tools:targetApi="31">
         <activity
+            android:name=".AndroidConstraintLayout"
+            android:exported="false" />
+        <activity
             android:name=".AdvancedViewControl"
             android:exported="false" />
         <activity

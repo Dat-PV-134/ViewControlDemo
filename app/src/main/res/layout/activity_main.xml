@@ -26,8 +26,14 @@
         android:text="LinearLayout" />
 
     <Button
+        android:id="@+id/btnRelative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnRelative"
-        android:text="RelativeLayout"/>
+        android:text="RelativeLayout" />
+
+    <Button
+        android:id="@+id/btnConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ConstraintLayout" />
 </LinearLayout>

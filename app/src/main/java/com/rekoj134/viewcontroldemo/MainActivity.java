@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnControlView, btnDateTime, btnLinear, btnRelative;
+    Button btnControlView, btnDateTime, btnLinear, btnRelative, btnConstraint;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         btnDateTime = findViewById(R.id.btnDateTime);
         btnLinear = findViewById(R.id.btnLinear);
         btnRelative = findViewById(R.id.btnRelative);
+        btnConstraint = findViewById(R.id.btnConstraint);
 
         btnControlView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getBaseContext(), AndroidRelativeLayout.class));
+            }
+        });
+
+        btnConstraint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext(), AndroidConstraintLayout.class));
             }
         });
     }
